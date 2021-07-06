@@ -348,3 +348,7 @@
     display: none;
   }
   
+  h1, h2, ul {
+    margin: 0;
+    padding: none;
+  }

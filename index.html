@@ -12,20 +12,53 @@
 
   <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="desktop-container">
+    <div class="container calc">
 
+      <header class="calc__header grid">
+        <h1 class="calc__header-logo">calc</h1>
+        <div class="calc__header-theme grid">
+          <h2 class="calc__header-theme-text">THEME</h2>
+          <ul class="calc__header-theme-label grid">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+          <div class="calc__header-theme-slider">
+            <input class="slider" type="range" min="1" max="3" value="1">
+          </div>
+        </div>
+      </header>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <main class="calc__body">
+        <div class="calc__body-display"></div>
+        <div class="calc__body-keys grid">
+            <input class="calc__body-keys-button" type="button" value="7">
+            <input class="calc__body-keys-button" type="button" value="8">
+            <input class="calc__body-keys-button" type="button" value="9">
+            <input class="calc__body-keys-button--text" data-action="delete" id="delete" type="button" value="DEL">
+            <input class="calc__body-keys-button" type="button" value="4">
+            <input class="calc__body-keys-button" type="button" value="5">
+            <input class="calc__body-keys-button" type="button" value="6">
+            <input class="calc__body-keys-button" data-action="add" type="button" value="+">
+            <input class="calc__body-keys-button" type="button" value="1">
+            <input class="calc__body-keys-button" type="button" value="2">
+            <input class="calc__body-keys-button" type="button" value="3">
+            <input class="calc__body-keys-button" data-action="subtract" type="button" value="-">
+            <input class="calc__body-keys-button" type="button" value="." id="decimal">
+            <input class="calc__body-keys-button" type="button" value="0">
+            <input class="calc__body-keys-button" data-action="divide" type="button" value="/">
+            <input class="calc__body-keys-button" data-action="multiply" type="button" value="x">
+            <input class="calc__body-keys-button--text wide" data-action="clear" id="reset" type="button" value="RESET">
+            <input class="calc__body-keys-button--text red" data-action="calculate" id="equals" type="button" value="=">
+        </div>
+      </main>
+
+    </div>
   </div>
+  
   <script
 			  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
 			  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="

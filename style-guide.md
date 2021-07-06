@@ -22,7 +22,7 @@ The designs were created to the following widths:
 - Desaturated dark blue (key background): hsl(225, 21%, 49%)
 - Desaturated dark blue (key shadow): hsl(224, 28%, 35%)
 
-- Red (key background, toggle): hsl(6, 63%, 50%)
+- Red (key background, toggle):  
 - Dark red (key shadow): hsl(6, 70%, 34%)
 
 - Light grayish orange (key background): hsl(30, 25%, 89%)
